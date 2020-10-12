@@ -61,12 +61,12 @@
   },
   "author": "liudx",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "homepage": "https://github.com/lemi-projects/ckeditor5-build-classic-ldx",
+  "bugs": "https://github.com/lemi-projects/ckeditor5-build-classic-ldx/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
-    "directory": "packages/ckeditor5-build-classic"
+    "url": "https://github.com/lemi-projects/ckeditor5-build-classic-ldx.git",
+    "directory": "/"
   },
   "scripts": {
     "dev": "webpack-dev-server --open",
