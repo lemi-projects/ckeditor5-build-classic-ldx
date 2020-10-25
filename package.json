@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-build-classic-ldx",
-  "version": "1.23.0",
+  "version": "1.23.2",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -72,5 +72,8 @@
     "dev": "webpack-dev-server --open",
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-alignment": "^23.0.0"
   }
 }

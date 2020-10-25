@@ -23,14 +23,16 @@ import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+//import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
-import PickImage from './pick-image/pickimage'
+import PickImage from './pick-image/pickimage';
+import MediaEmbed from './pick-media/src/mediaembed';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -53,13 +55,14 @@ ClassicEditor.builtinPlugins = [
 	Indent,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
 	TableToolbar,
 	TextTransformation,
-	PickImage
+	Alignment,
+	PickImage,
+	MediaEmbed,
 ];
 
 // Editor configuration.
@@ -74,6 +77,7 @@ ClassicEditor.defaultConfig = {
 			'bulletedList',
 			'numberedList',
 			'|',
+			'alignment',
 			'indent',
 			'outdent',
 			'|',
@@ -81,7 +85,7 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'|',
 			'pickImage',
-			'mediaEmbed',
+			'MediaEmbed',
 			'|',
 			'undo',
 			'redo'
