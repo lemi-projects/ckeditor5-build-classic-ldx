@@ -40,13 +40,18 @@ export default class MediaEmbedEditing extends Plugin {
 				{
 					name: 'youlinli',
 					url: [
-						/^(.+)/
+						/^([^\$]+)\$?(.*)/
 					],
 					html: match => {
-						const id = match[ 1 ];
+						const src = match[1];
+						const poster = match[2];
+						var pstr = ''
+						if (poster) {
+							pstr = `poster="${poster}"`
+						}
 
 						return (
-							`<video src="${ id }" style="width:100%;" enable-danmu danmu-btn controls />`
+							`<video src="${src}" ${pstr} style="width:100%;" enable-danmu danmu-btn controls ></video>`
 						);
 					}
 				}
