@@ -62,7 +62,7 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Alignment,
 	PickImage,
-	MediaEmbed,
+	MediaEmbed
 ];
 
 // Editor configuration.
@@ -83,6 +83,9 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'blockQuote',
 			'insertTable',
+			'|',
+			'fontColor',
+			'fontSize',
 			'|',
 			'pickImage',
 			'MediaEmbed',
